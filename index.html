@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+    <div class="page">
+        <div class="header-content">
+            <h1>avalie a sua mentoria</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+            <img src="./images/img1.svg" alt="balao de texto contento ranking de estrelas de 0 até 5">
+        </div>
+        
+        <div class="form-header"></div>
+
+        <form action="">
+                <fieldset>
+                    <legend class="legend-header">informações pessoais</legend>
+                    <div class="col-2">
+                        <div class="input-wrapper">
+                            <label for="first-name">nome</label>
+                            <input type="text" name="first-name" id="first-name">
+                        </div>
+    
+                        <div class="input-wrapper">
+                            <label for="last-name">sobrenome</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </div>
+                    </div>
+    
+                    <div class="input-wrapper">
+                        <label for="lastt-name">email <span>(digite um email válido)</span></label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </fieldset>
+
+            <fieldset>
+                <legend>informações do mentor</legend>
+
+                <div class="input-wrapper">
+                    <label for="mentor-name">selecione quem foi o seu mentor</label>
+                    <select name="mentor-name" id="mentor-name">
+                        <option value="" disabled selected>Selecione seu mentor</option>
+                        <option value="mentor">Messi</option>
+                        <option value="mentor">Ronaldo</option>
+                    </select>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="feedback">Feedback sobre o mentor</label>
+                    <textarea name="feedback" id="feedback"></textarea>
+                </div>
+
+                <div class="input-wrapper" id="checkbox-wrapper">
+                    <input type="checkbox" name="doubts-clarified-checkbox" id="checkbox">
+                    <label for="checkbox">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>agendando próxima mentoria</legend>
+                <div class="col-3">
+                    <div class="input-wrapper">
+                        <label for="date">data <span>(DD/MM/AAAA)</span></label>
+                        <input type="date" name="date" id="date">
+                    </div>
+
+                    <div class="col-2" id="col-2-time">
+                        <div class="input-wrapper">
+                            <label for="from">das</label>
+                            <input type="time" name="" id="">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="to">até</label>
+                            <input type="time" name="to" id="to">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button>salvar</button>
+        </form>
+    </div>
+</body>
+</html>
